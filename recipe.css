@@ -1,0 +1,179 @@
+* {
+    overflow: auto;
+}
+body {
+    background-color: #8ba1bb;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+div.content {
+    background-color: white;
+    margin: 40px 8px 40px 8px;
+    padding: 0px 8px 20px 8px;
+    min-width: 350px;
+    box-shadow: 0px 0px 8px 8px rgba(18, 4, 4, 0.2);
+    overflow: visible;
+}
+h1 {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+p.description {
+    text-align: center;
+    max-width: 400px;
+    display: inline-block;
+    font-size: 14px;
+}
+.center {
+    text-align: center;
+    width: 100%;
+}
+div.category {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    overflow: visible;
+}
+p.category {
+    background-color: black;
+    color: aliceblue;
+    display: inline-block;
+    text-align: center;
+    padding: 8px 18px;
+    margin-bottom: 15px;
+    margin-top: -16px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+div.separator{
+    height: 1px;
+    width: 100px;
+    background-color: grey;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.info{
+    position: relative;
+}
+table.info{
+    position: absolute; 
+    bottom:0; 
+    width: 100%;
+    color: white; 
+    background-color: #6c8290; 
+    height: 50px; 
+    opacity: 85%;
+}
+table.info td{
+    text-align: center;
+    vertical-align: top;
+    font-size: 12px;
+}
+table.info th{
+    padding: 8px;
+    vertical-align: bottom;
+    font-size: 14px;
+}
+
+img.info{
+    display:block;
+    max-height:400px;
+    object-fit: cover;
+}
+
+div.col {
+    width: 100%;
+    margin-top: 20px;
+}
+
+div.col h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 5px solid #6c8290;
+    padding-bottom: 5px ;
+}
+
+div.col1 {
+    
+    display: inline-block;
+    margin-right: 10%;
+    margin-bottom: 20%;
+}
+
+div.col2 {
+    float: right;
+    
+} 
+
+div.ingre p{
+   border: 1px solid lightgray;
+   font-size: 14px;
+   text-align: center;
+   padding: 8px 10px;
+   margin-top: 3px;
+   margin-bottom: 0px;
+   
+}
+table.instru p.number {
+    background-color: #6c8290;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 23px;
+    height: 23px;
+    text-align: center;
+    padding-top: 4px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0;
+}
+
+table.instru td.instru_step{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+table.instru td {
+    vertical-align: top;
+}
+table.instru tr {
+    height: 10px;
+} 
+            /*Desktop style*/
+@media only screen and (min-width: 768px) {
+    table.info{
+        height: 100px; 
+    }
+    table.info td{
+        font-size: 14px;
+    }
+    table.info th{
+        font-size: 16px;
+    }
+    div.col {
+        width: 45%;
+        margin-top: 20px;
+    }
+    
+    div.col1 {
+        
+        display: inline-block;
+        margin-right: 10%;
+        margin-bottom: 20%;
+    }
+    
+    div.col2 {
+        float: right;
+        
+    } 
+}
+/*Very large screen*/
+@media only screen and (min-width: 768px) {
+    div.content {
+        margin-right: auto;
+        margin-left: auto;
+        min-width: 650px;
+    }
+}
